@@ -1,0 +1,10 @@
+{
+    "fname":"Uday","lname":"Shety","age":"22","email":"e1@capgemini.com",
+    "gender":"male",
+    "hobbies":[
+        "singing",
+        "traveling",
+        "dancing"
+    ],
+    "promo":"abc007"
+}

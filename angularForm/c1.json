@@ -1,0 +1,9 @@
+{
+    "fname":"Himanshu","lname":"Mishra","age":"22","email":"e1@capgemini.com",
+    "gender":"male",
+    "hobbies":[
+        "singing",
+        "traveling"
+    ],
+    "promo":"abc007"
+}

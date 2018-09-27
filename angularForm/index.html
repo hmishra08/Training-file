@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        <form onsubmit="return f1()" role="form">
+            <div class="form-group">
+                <div class="jumbotron">
+                <input type="button" name="bt1" id="bt1" value="Candidate1" class="btn-info" onclick="info1('c1.json')">
+                <input type="button" name="bt2" id="bt2" value="Candidate2" class="btn-info" onclick="info1('c2.json')">
+                <input type="button" name="bt3" id="bt3" value="Candidate3" class="btn-info">
+                <input type="button" name="bt4" id="bt4" value="Candidate4" class="btn-info">
+                <input type="button" name="bt5" id="bt5" value="Candidate5" class="btn-info">
+                <input type="button" name="bt6" id="bt6" value="Candidate6" class="btn-info">
+                <input type="button" name="bt7" id="bt7" value="Candidate7" class="btn-info">
+                <input type="button" name="bt8" id="bt8" value="Candidate8" class="btn-info">
+                <input type="button" name="bt9" id="bt9" value="Candidate9" class="btn-info">
+                <input type="button" name="bt10" id="bt10" value="Candidate10" class="btn-info">
+                </div>
+                <table class="table">
+             <tr><td>First Name</td>
+                <td><input type="text" name="fname" id="fname" pattern="[A-Za-z]{1,10}" class="form-control" onblur="fnameval()">
+                <p id="fname1"></p>
+                </td>
+             </tr>
+             <tr><td>Last Name</td>
+             <td><input type="text" name="lname" id="lname" pattern="[A-Za-z]{1,10}" class="form-control" onblur="lnameval()">
+             <p id="lname1"></p>
+             </td>
+             </tr>
+             <tr><td>Age</td>
+             <td><input type="number" name="age" id="age" min="18"max="60" class="form-control" onblur="ageval()">
+             <p id="age1"></p>
+             </td>
+             </tr>
+             <tr><td>Email</td>
+             <td><input type="email" name="email" id="email" class="form-control" onblur="emailval()">
+             <p id="email1"></p></td>
+             </tr>
+             <tr><td>Gender</td>
+             <td><input type="radio" name="gender" id="gender1" value="male">Male
+                    <input type="radio" name="gender" id="gender2" value="female">Female</td>
+             </tr>
+            
+            <tr><td>Hobbies</td>
+            <td><input type="checkbox" name="hobbies" id="hobbies1" value="singing">Singing
+            <input type="checkbox" name="hobbies" id="hobbies2" value="Instrument" >Instrument
+            <input type="checkbox" name="hobbies" id="hobbies3" value="Dancing">Dancing
+            <input type="checkbox" name="hobbies" id="hobbies4" value="Traveling" >Traveling
+            <input type="checkbox" name="hobbies" id="hobbies5" value="Fine Arts" >Fine Arts</td>
+            </tr>
+            <tr><td>Promocode</td>
+            <td><input type="text" name="promo" id="promo"  class="form-control" pattern="[A-Za-z]{3}[0-9]{3}"></td>
+            </tr>
+                </table>
+            <input type="submit" name="submit" id="submit" class="form-control">
+            </div>
+        </form>
+        </div>
+        
+        <script src="new1.js"></script>
+    </body>
+    
+</html>
