@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var source=document.getElementById("source").value;
+                document.getElementById("desti")=source;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Source<input type="text" name="source" id="source" onkeyup="f1()">
+            Desgination<input type="text" name="desti" id="desti" onkeyup="f2()">
+        </form>
+        <script>
+            function f1()
+            {
+                var source=document.getElementById("source").value;
+                document.getElementById("desti").value=source;
+            }
+            function f2()
+            {
+                var desti=document.getElementById("desti").value;
+                document.getElementById("source").value=desti;
+            }
+        </script>
+    </body>
+</html>
