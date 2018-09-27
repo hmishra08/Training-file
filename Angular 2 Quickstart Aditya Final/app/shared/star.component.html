@@ -1,0 +1,22 @@
+
+
+
+<div class="crop" 
+    [style.width.px]="starWidth"
+    [title]="rating"
+    (click)="onClick()">
+    <input type="button" (click)='onClick()'>
+    <!--{{rating}}-->
+    <div style="width: 86px">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+    </div>
+    <div >
+        <input type="text" value={{Product.productId}}>
+        <input type="text" value={{Product.productName}}>
+    </div>
+    <ai-subStar [subProduct]='Product'></ai-subStar>
+</div>
