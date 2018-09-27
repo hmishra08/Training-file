@@ -1,0 +1,20 @@
+<div>
+<table class="table table-bordered table-hover">
+  <tr>
+    <th><a (click)="sortId()" href="#">Mobile Id</a></th>
+    <th><a (click)="sortName()" href="#">Mobile Name</a></th>
+    <th><a (click)="sortPrice()" href="#">Mobile Price</a></th>
+    <th><a href="#">Action</a></th>
+    
+  </tr>
+  <tr *ngFor='let detail of details,let i=index'>
+    <td>{{detail.mobId}}</td>
+    <td>{{detail.mobName}}</td>
+    <td>{{detail.mobPrice | currency:'USD':true:'1.2-2'}}</td>  <!--Pipe for using dollar symbol with price -->
+    
+    <td><button (click)="deleteRow(i)" class="btn btn-success">Delete</button></td>
+    
+  </tr>
+</table>
+
+</div>
